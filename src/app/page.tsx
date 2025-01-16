@@ -1,8 +1,12 @@
+import { Container } from "@/components/layout/Container";
+import { OverView } from "@/components/overViewSection";
+
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center">
-      <h1 className="text-[60px] underline ">Hasibul Hasan</h1>
-      <h3 className="text-3xl underline">Software Engineer</h3>
-    </div>
+    <section className="py-20 bg-neutral-25 h-screen flex justify-center items-center">
+      <Container>
+        <OverView />
+      </Container>
+    </section>
   );
 }

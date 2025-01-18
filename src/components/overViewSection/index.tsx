@@ -13,16 +13,16 @@ export const OverView = () => {
             className="w-full h-full object-cover"
           />
         </div>
-        <div className="flex items-center text-[120px] font-bold">
+        <div className="flex items-center gap-1 text-[120px] font-bold">
           <span className=" leading-[0.9]">H</span>
           <span className=" leading-[0.9] text-red-600">A</span>
           <span className=" leading-[0.9]">S</span>
-          <span className=" leading-[0.9]">L</span>
+          <span className=" leading-[0.9]">i</span>
           <span className=" leading-[0.9]">B</span>
           <span className=" leading-[0.9]">U</span>
           <span className=" leading-[0.9]">L</span>
         </div>
-        <div className="flex items-center text-[120px] font-bold">
+        <div className="flex items-center gap-1 text-[120px] font-bold">
           <span className=" leading-[0.9]">H</span>
           <span className=" leading-[0.9]  ">A</span>
           <span className=" leading-[0.9] ">S</span>

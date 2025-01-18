@@ -120,7 +120,9 @@ export default {
   		fontSize: {},
   		animation: {
   			translateDown: 'translateDown 0.4s ease',
-  			'glide-horizontal': 'glide-horizontal 2s linear infinite'
+  			'glide-horizontal': 'glide-horizontal 2s linear infinite',
+  			orbit: 'orbit calc(var(--duration)*1s) linear infinite',
+  			meteor: 'meteor 5s linear infinite'
   		},
   		keyframes: {
   			translateDown: {
@@ -138,6 +140,27 @@ export default {
   				'100%': {
   					transform: 'translateX(100vw)'
   				}
+  			},
+  			orbit: {
+  				'0%': {
+  					transform: 'rotate(calc(var(--angle) * 1deg)) translateY(calc(var(--radius) * 1px)) rotate(calc(var(--angle) * -1deg))'
+  				},
+  				'100%': {
+  					transform: 'rotate(calc(var(--angle) * 1deg + 360deg)) translateY(calc(var(--radius) * 1px)) rotate(calc((var(--angle) * -1deg) - 360deg))'
+  				}
+  			},
+  			meteor: {
+  				'0%': {
+  					transform: 'rotate(215deg) translateX(0)',
+  					opacity: '1'
+  				},
+  				'70%': {
+  					opacity: '1'
+  				},
+  				'100%': {
+  					transform: 'rotate(215deg) translateX(-500px)',
+  					opacity: '0'
+  				}
   			}
   		},
   		borderRadius: {
@@ -153,19 +176,7 @@ export default {
   		lg: '1024px',
   		xl: '1160px'
   	},
-  	fontFamily: {
-  		// sans: [
-  		// 	'Murecho',
-  		// 	'-apple-system',
-  		// 	'BlinkMacSystemFont',
-  		// 	'Segoe UI"',
-  		// 	'Roboto',
-  		// 	'Poppins',
-  		// 	'Helvetica Neue',
-  		// 	'Arial',
-  		// 	'sans-serif'
-  		// ]
-  	},
+  	fontFamily: {},
   	fontWeight: {
   		normal: '400',
   		medium: '475',

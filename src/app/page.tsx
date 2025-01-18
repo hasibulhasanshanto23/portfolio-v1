@@ -1,16 +1,19 @@
 import { Container } from "@/components/layout/Container";
 import { OverView } from "@/components/overViewSection";
+import { SkillSection } from "@/components/skillsSection";
 
 export default function Home() {
   return (
     <>
-      <section className="py-20 bg-neutral-50 h-screen flex justify-center items-center">
+      <section className="py-20 bg-neutral-50  flex justify-center items-center">
         <Container>
           <OverView />
         </Container>
       </section>
-      <section className="py-20  flex justify-center items-center">
-        <Container>Skills Section</Container>
+      <section className="  flex justify-center items-center">
+        <Container>
+          <SkillSection/>
+        </Container>
       </section>
     </>
   );

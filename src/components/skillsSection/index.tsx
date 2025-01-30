@@ -10,13 +10,13 @@ import {
   Storybook,
   Git,
   NodeJs,
-  ExpressJsDark,
   MongoDB,
   HTML5,
   CSS,
   TailwindCSS,
   MaterialUI,
   ShadcnUI,
+  ExpressJsLight,
 } from "developer-icons";
 import { SparklesText } from "../ui/sparkles-text";
 <SparklesText
@@ -27,7 +27,7 @@ export const SkillSection = () => {
   return (
     <div className="flex flex-col md:flex-row items-center justify-between gap-3 w-full">
       {/* Orbiting Section */}
-      <div className="relative flex h-[500px] w-full flex-col items-center justify-center">
+      <div className="relative flex h-[420px] w-full flex-col items-center justify-center">
         <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-black">
           Skills
         </span>
@@ -41,7 +41,7 @@ export const SkillSection = () => {
           <Storybook />
           <Git />
           <NodeJs />
-          <ExpressJsDark />
+          <ExpressJsLight />
           <MongoDB />
         </OrbitingCircles>
         <OrbitingCircles iconSize={30} radius={100} reverse speed={2}>
@@ -58,7 +58,7 @@ export const SkillSection = () => {
         <div className="pb-6">
           <SparklesText
             text="Some of my favourite tools"
-            className="text-[28px] leading-[42px] text-neutral-900 font-normal"
+            className="text-[28px] leading-[42px] text-dark-100 font-normal"
           />
         </div>
         <div className="flex flex-wrap gap-2 items-center justify-center">

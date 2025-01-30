@@ -4,7 +4,7 @@
 
 
 body{
-  @apply text-neutral-900;
+  @apply text-dark-100;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -174,7 +174,7 @@ p,span{
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-[#181A1B] text-foreground ;
   }
 }
 

@@ -14,6 +14,7 @@ import {
   TailwindCSS,
   MaterialUI,
   ShadcnUI,
+  ExpressJsLight,
 } from "developer-icons";
 
 export const data = {
@@ -71,7 +72,7 @@ export const data = {
     {
       id: 8,
       name: "Express.js",
-      logo: <ExpressJsDark />,
+      logo: <ExpressJsLight />,
     },
     {
       id: 9,

@@ -1,12 +1,10 @@
 import Link from "next/link";
 import WordRotate from "../ui/word-rotate";
 import { GitHubDark, LinkedIn } from "developer-icons";
-import { Meteors } from "../ui/meteors";
 
 export const OverView = () => {
   return (
     <div className="flex items-center justify-center gap-2">
-     
       <div className="flex flex-col items-center">
         <div className="w-[155px] h-[155px] rounded-[50%]  overflow-hidden">
           <img

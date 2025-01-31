@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={murecho.className}>
+    <html lang="en" className={`${murecho.className} scroll-smooth`}>
       <body>{children}</body>
     </html>
   );

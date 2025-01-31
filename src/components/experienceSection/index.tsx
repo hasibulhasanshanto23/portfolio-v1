@@ -1,4 +1,6 @@
+import Link from "next/link";
 import { SparklesText } from "../ui/sparkles-text";
+import Image from "next/image";
 
 export const ExperienceSection = () => {
   return (
@@ -7,12 +9,14 @@ export const ExperienceSection = () => {
         text="Professional Experience"
         className="text-[28px] leading-[42px] text-dark-100 font-normal"
       />
-      <div className="flex flex-col gap-5 py-6 px-8 rounded-3xl bg-dark-400 w-full max-w-[830px] border !border-neutral-800">
-        <div className="flex items-center gap-4">
-          <img
-            src="images/ShareTrip.png"
-            className="w-14 h-14 object-cover"
-            alt=""
+      <div className="flex flex-col gap-5 py-6 max-lg:px-6 px-8 rounded-3xl bg-dark-400 w-full max-w-[830px] border !border-neutral-800">
+        <div className="flex items-center max-lg:flex-col gap-4">
+          <Image
+            src="/images/ShareTrip.png"
+            alt="ShareTrip Logo"
+            width={56}
+            height={56}
+            className="object-cover"
           />
           <div className="flex flex-col gap-1">
             <div className="flex items-center justify-between gap-3">
@@ -22,7 +26,13 @@ export const ExperienceSection = () => {
               <span className="text-[16px] leading-6">Feb 2022 -- Present</span>
             </div>
             <div className="flex flex-col gap-3">
-              <span>ShareTrip - (Dhaka) - Bangladesh</span>
+              <Link
+                href={"https://sharetrip.net/"}
+                className="underline font-bold"
+                target="_blank"
+              >
+                ShareTrip - (Dhaka) - Bangladesh
+              </Link>
               <p>
                 <strong>Stack: </strong>
                 <span className="text-[15px] leading-[18px]">
@@ -48,6 +58,11 @@ export const ExperienceSection = () => {
             <li>
               <span className="font-semibold">PayBill System:</span> Implemented
               an efficient utility bill payment system.
+            </li>
+
+            <li>
+              <span className="font-semibold">Business Class Flight:</span>{" "}
+              Implemented business class flight search & request system.
             </li>
             <li>
               <span className="font-semibold">E-commerce Shop:</span> Built an

@@ -5,7 +5,23 @@ import "../styles/globals.css";
 export const metadata: Metadata = {
   title: "Hasibul Hasan || Software Engineer",
   description:
-    "A detail-oriented and creative Software Engineer with a strong foundation in web development technologies and a passion for crafting user-friendly, responsive, and visually appealing interfaces.Experienced in optimizing performance, implementing accessibility standards, and collaborating with cross-functional teams to deliver high-quality solutions.",
+    "A detail-oriented and creative Software Engineer with a strong foundation in web development technologies.",
+  openGraph: {
+    title: "Hasibul Hasan || Software Engineer",
+    description:
+      "A detail-oriented and creative Software Engineer with a strong foundation in web development technologies.",
+    url: "https://www.imhasibul.com/",
+    siteName: "Hasibul Hasan",
+    images: [
+      {
+        url: "/og.png",
+        width: 1200,
+        height: 630,
+        alt: "Hasibul Hasan - Software Engineer",
+      },
+    ],
+    type: "website",
+  },
 };
 
 const murecho = Murecho({

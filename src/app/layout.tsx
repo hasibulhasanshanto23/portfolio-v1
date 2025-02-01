@@ -10,6 +10,7 @@ export const metadata: Metadata = {
 
 const murecho = Murecho({
   weight: "variable",
+  subsets: ["latin"],
 });
 
 export default function RootLayout({

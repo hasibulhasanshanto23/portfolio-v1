@@ -56,11 +56,11 @@ export default function Home() {
         </Container>
       </section>
 
-      <section className=" py-8 flex justify-center items-center">
+      {/* <section className=" py-8 flex justify-center items-center">
         <Container>
           <ContactSection />
         </Container>
-      </section>
+      </section> */}
 
       <section className=" py-8 flex justify-center items-center">
         <Container>

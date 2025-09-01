@@ -1,4 +1,4 @@
-import { ContactSection } from "@/components/contactSection";
+// import { ContactSection } from "@/components/contactSection";
 import { EducationSection } from "@/components/educationSection";
 import { ExperienceSection } from "@/components/experienceSection";
 import { FooterSection } from "@/components/footerSection";
